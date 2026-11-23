@@ -1,0 +1,51 @@
+{
+  "answer_features": "final normalized state at last nonpadding prompt token",
+  "answer_state_digest": "a8fd290dae31af21f4da64afb4be90c6fda46797801908dffd9cb134d737150b",
+  "architecture": "frozen original Qwen + FAST + answer classifier",
+  "arm": "mlp256",
+  "backbone_adapters": 0,
+  "enable_thinking": false,
+  "fast_features": "RMS-normalized last prompt state after layer 16, epsilon=1e-6",
+  "gate_after": 16,
+  "gate_tensor_sha256": "ae23854dbfdb9502bec475b11661f6f1f7e779a0e6d5f9208bff7e27e6d7fba2",
+  "head": {
+    "activation": "GELU",
+    "activation_approximate": "none",
+    "bias": true,
+    "class": "MLPHead",
+    "dropout": 0.0,
+    "dtype": "float32",
+    "hidden_size": 256,
+    "in_features": 4096,
+    "initialization": "torch-linear-default",
+    "out_features": 18,
+    "parameters": {
+      "hidden.bias": [
+        256
+      ],
+      "hidden.weight": [
+        256,
+        4096
+      ],
+      "output.bias": [
+        18
+      ],
+      "output.weight": [
+        18,
+        256
+      ]
+    }
+  },
+  "max_choices": 18,
+  "max_input_tokens": 2048,
+  "model": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "schema": 1,
+  "seed": 42,
+  "selected_epoch": 6,
+  "sha256": "17745c39e3a8478a65f4acb26d10f830ec8af010750cef2c33821c1de92122f9",
+  "system_prompt": "You are a helpful assistant.",
+  "threshold": 0.5,
+  "release_selection": "selected for private release; original checkpoint unchanged",
+  "source_config_sha256": "acb80049efab9950ddce3ab198803b55fb0cedf4a5ed97ff74df31076b384769"
+}

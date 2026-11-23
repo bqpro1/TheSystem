@@ -1,0 +1,96 @@
+{
+  "sources": {
+    "massive": {
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/AmazonScience/massive"
+      ],
+      "revisions": [
+        "ff6bd8e4b27c3543e4f8fe2108f32bb95a6f8740"
+      ]
+    },
+    "boolq": {
+      "licenses": [
+        "CC-BY-SA-3.0"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/google/boolq"
+      ],
+      "revisions": [
+        "35b264d03638db9f4ce671b711558bf7ff0f80d5"
+      ]
+    },
+    "multi_nli": {
+      "licenses": [
+        "Mixed source text terms; see upstream card and MultiNLI license"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/nyu-mll/multi_nli"
+      ],
+      "revisions": [
+        "da70db2af9d09693783c3320c4249840212ee221"
+      ]
+    },
+    "helpsteer2": {
+      "licenses": [
+        "CC-BY-4.0"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/nvidia/HelpSteer2"
+      ],
+      "revisions": [
+        "990b2711a36180dd19d9c94b8627844866f8982a"
+      ]
+    },
+    "winogrande": {
+      "licenses": [
+        "CC-BY (dataset declaration; version unspecified). Apache-2.0 applies to code only."
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/allenai/winogrande"
+      ],
+      "revisions": [
+        "01e74176c63542e6b0bcb004dcdea22d94fb67b5"
+      ]
+    },
+    "oasst1": {
+      "licenses": [
+        "apache-2.0"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/OpenAssistant/oasst1"
+      ],
+      "revisions": [
+        "fdf72ae0827c1cda404aff25b6603abec9e3399b"
+      ]
+    },
+    "dolly": {
+      "licenses": [
+        "cc-by-sa-3.0"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/databricks/databricks-dolly-15k"
+      ],
+      "revisions": [
+        "bdd27f4d94b9c1f951818a7da7fd7aeea5dbff1a"
+      ]
+    },
+    "tablegpt": {
+      "licenses": [
+        "mit"
+      ],
+      "source_urls": [
+        "https://huggingface.co/datasets/LipengCS/Table-GPT"
+      ],
+      "revisions": [
+        "25754c7a072dffca92e18c56f33832936f53495a"
+      ]
+    }
+  },
+  "notes": [
+    "Publisher declarations recorded; underlying content rights are not independently certified.",
+    "See audit/*-manifest.json and cached source cards for exact upstream files and hashes."
+  ]
+}

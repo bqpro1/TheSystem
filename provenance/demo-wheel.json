@@ -1,0 +1,11 @@
+{
+  "filename": "thesystem-0.1.0rc3-py3-none-any.whl",
+  "purpose": "Inference demos without a memory-capacity cutoff; reference notebooks 03\u201305 retain 0.1.0rc1",
+  "release_manifest_sha256": "ca2a1bbbf6648940eb6f76ad42a4b8460b5990bdd52c0171f3d44db12e25ee97",
+  "schema": 1,
+  "sha256": "f315e2cf911edd113bbde3720ef36ba8dd33d2437b2d1e02c4e00ac40cca12c1",
+  "size": 116291,
+  "source_commit": "71085f68b57b1ac5821841c5a428a1e25e54f670",
+  "source_repository": "https://github.com/bqpro1/TheSystem",
+  "version": "0.1.0rc3"
+}

@@ -1,0 +1,125 @@
+{
+  "source": "Selected release implementations, assembled 10 November 2026",
+  "files": [
+    {
+      "file": "lora/data.py",
+      "source_sha256": "13251d07928a4095af4917362d5c396e40f11856200213bb42fb4790cb4f8096",
+      "packaged_sha256": "1f7f1c47dc0f99ebb09703f77ec7cb2489fecfdc8e19d3309bce3abe133559dd",
+      "changes": "Status message counts the packaged datasets; numerical implementation unchanged."
+    },
+    {
+      "file": "lora/evaluation.py",
+      "source_sha256": "25697e36df385f589183a772dd5d1b7a3d7edef7ba05b52bfafb2cd53da97f21",
+      "packaged_sha256": "25697e36df385f589183a772dd5d1b7a3d7edef7ba05b52bfafb2cd53da97f21",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "lora/model.py",
+      "source_sha256": "76444dec973a319529dd9f9a8d2da6805b8e13545c6913cba0b3ce5a0e486852",
+      "packaged_sha256": "76444dec973a319529dd9f9a8d2da6805b8e13545c6913cba0b3ce5a0e486852",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "lora/requirements.txt",
+      "source_sha256": "d04921cac1070abe374b7388ead1ec98e54ee8d1336f41871e2616387523a006",
+      "packaged_sha256": "d04921cac1070abe374b7388ead1ec98e54ee8d1336f41871e2616387523a006",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "lora/runtime.py",
+      "source_sha256": "46cdd404081fc74e550f9b6577b4fe1e317e1e31a4f5ac4c4b3e5dee7d13bcf4",
+      "packaged_sha256": "e369c1010dab0c0d94942aa070d52afa961082d1afd3d14db4eb3d6b383c532b",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "lora/setup_runtime.py",
+      "source_sha256": "3cd1fcd4a6595c5434158c4f20983eb01b2569862d79fd569b7ea605ef3e1741",
+      "packaged_sha256": "2e181c9acd6a193c8fb3ee214c5ccc80aa47f77f5d437b63782336a8f3291644",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "lora/training.py",
+      "source_sha256": "c0e025e5c816235a0b495da3fdaa5e93560b31f54dc05d3ff574a29b701f0bdd",
+      "packaged_sha256": "c0e025e5c816235a0b495da3fdaa5e93560b31f54dc05d3ff574a29b701f0bdd",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "probe/model.py",
+      "source_sha256": "adf3fd5d80d795444074c74919a4911c0927d25d0dfd1870cfb65ea8a08f89f4",
+      "packaged_sha256": "adf3fd5d80d795444074c74919a4911c0927d25d0dfd1870cfb65ea8a08f89f4",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "probe/probe_model.py",
+      "source_sha256": "5a803a4bc629054d0221eb83561cf1f975407387967b7f55a1df378919d7f97e",
+      "packaged_sha256": "3d742f6f88d3dfb559c2f52dded6842f208922e372fb4d4f87a6112d6e2e1d67",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "probe/probe_training.py",
+      "source_sha256": "516f8ea75c3039b90ad77d8cbf535a15558552c91e4d61e8cf48471cc0f62daf",
+      "packaged_sha256": "66499dad640657e7a4d62f1bc151fb549b5cd8a85d57fef169e0ca1e6d0ef50c",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "probe/progress.py",
+      "source_sha256": "7cccc1d678ddc7e2624ccaa098beb00069e5453d6fe9659cce86c873a3fa1635",
+      "packaged_sha256": "7cccc1d678ddc7e2624ccaa098beb00069e5453d6fe9659cce86c873a3fa1635",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "probe/release_artifacts.py",
+      "source_sha256": "30b22096ab9148b76d489e3564be0f3d41b2cdcebcaec67c2c94032363352c9e",
+      "packaged_sha256": "38314530a1779f44bf787caebf1f59e2a8ef16fdfc9efe0a073cffb33372ce86",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "probe/release_data.py",
+      "source_sha256": "d0036d67d07689d188b73493ba53eb2aa39003d364025c886be4766d6ff5cf86",
+      "packaged_sha256": "d0036d67d07689d188b73493ba53eb2aa39003d364025c886be4766d6ff5cf86",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "probe/release_evaluation.py",
+      "source_sha256": "5e3ebfebf0eb7c3009dda3c056baa0dad542e50a468d1440502479602117d8b7",
+      "packaged_sha256": "49fedcb79bdfe0aef3572dc3f4059d2c31c7e6817856aaca36e63f83b1595394",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "probe/requirements.txt",
+      "source_sha256": "d04921cac1070abe374b7388ead1ec98e54ee8d1336f41871e2616387523a006",
+      "packaged_sha256": "d04921cac1070abe374b7388ead1ec98e54ee8d1336f41871e2616387523a006",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "probe/runtime.py",
+      "source_sha256": "ab834ff947348a2eed4a1ae021ab6b99284a1852e0ae9fed26448aff783e158a",
+      "packaged_sha256": "eacf4cac33ecfcb4b6c3d2ccfb57276911089d6ef39f083f1230904efd74f9bd",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "probe/setup_runtime.py",
+      "source_sha256": "3cd1fcd4a6595c5434158c4f20983eb01b2569862d79fd569b7ea605ef3e1741",
+      "packaged_sha256": "5dc149973bb219b4dd7cf80995374c1ccef551cb5ed6042b4198677769893064",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "fast/gate_reference_training.py",
+      "source_sha256": "c0e025e5c816235a0b495da3fdaa5e93560b31f54dc05d3ff574a29b701f0bdd",
+      "packaged_sha256": "c0e025e5c816235a0b495da3fdaa5e93560b31f54dc05d3ff574a29b701f0bdd",
+      "changes": "Unchanged."
+    },
+    {
+      "file": "fast/gate_training.py",
+      "source_sha256": "75d967b45c08b895b6450e90d6dacec68ea2dd7d223a95e6af48a8ac93084398",
+      "packaged_sha256": "314a2eef76e89542f7d746dffa0bee91a42863810dfde0dc0c69936b7c45804e",
+      "changes": "Package-relative imports only; setup subprocess uses qualified module name."
+    },
+    {
+      "file": "fast/progress.py",
+      "source_sha256": "7cccc1d678ddc7e2624ccaa098beb00069e5453d6fe9659cce86c873a3fa1635",
+      "packaged_sha256": "7cccc1d678ddc7e2624ccaa098beb00069e5453d6fe9659cce86c873a3fa1635",
+      "changes": "Unchanged."
+    }
+  ]
+}

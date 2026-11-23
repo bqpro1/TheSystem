@@ -1,0 +1,395 @@
+</blockquote>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>MultiNLI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../styles.css" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic' rel='stylesheet' type='text/css'>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-954377-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+<h2>MultiNLI</h2>
+<div id="bigbox">
+<div id="medbox"><div id="content">
+<h3>The Multi-Genre NLI Corpus</h3>
+
+<p>
+<a href="https://wp.nyu.edu/adinawilliams/">Adina Williams</a><br />
+<a href="https://woollysocks.github.io/">Nikita Nangia</a><br />
+<a href="..">Sam Bowman</a><br />
+NYU
+</p>
+
+<h4>Introduction</h4>
+
+<p>
+The Multi-Genre Natural Language Inference (MultiNLI) corpus is a crowd-sourced collection of 433k sentence pairs annotated with textual entailment information. The corpus is modeled on the SNLI corpus, but differs in that covers a range of genres of spoken and written text, and supports a distinctive cross-genre generalization evaluation. The corpus served as the basis for the shared task of the <a href="https://repeval2017.github.io/shared/">RepEval 2017 Workshop</a> at EMNLP in Copenhagen.
+</p>
+
+
+<h4>Examples</h4>
+
+<table class="c20" padding="5">
+
+<tbody>
+
+<tr class="c3">
+
+<td class="c17" colspan="1" rowspan="1">
+
+<strong>Premise</strong>
+
+</td>
+
+<td class="c37" colspan="1" rowspan="1">
+
+<strong>Label</strong>
+
+</td>
+
+<td class="c35" colspan="1" rowspan="1">
+
+<strong>Hypothesis</strong>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c38" colspan="3" rowspan="1">
+
+<em><strong>Fiction</strong></em>
+
+</td>
+
+</tr>
+
+<tr class="c3">
+
+<td class="c17" colspan="1" rowspan="1">
+
+<span>The Old One always comforted Ca'daan, except today.</span>
+
+</td>
+
+<td class="c37" colspan="1" rowspan="1">
+
+<em>neutral</em>
+
+</td>
+
+<td class="c35" colspan="1" rowspan="1">
+
+<span class="c4">Ca'daan knew the Old One very well.</span>
+
+<span class="c5"></span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c38" colspan="3" rowspan="1">
+
+<em><strong>Letters</strong></em>
+
+</td>
+
+</tr>
+
+<tr class="c3">
+
+<td class="c17" colspan="1" rowspan="1">
+
+<span>Your gift is appreciated by each and every student who will benefit from your generosity.</span>
+
+</td>
+
+<td class="c37" colspan="1" rowspan="1">
+
+<em>neutral</em>
+
+</td>
+
+<td class="c35" colspan="1" rowspan="1">
+
+<span class="c4">Hundreds of students will benefit from your generosity.</span>
+
+<span class="c5"></span>
+
+</td>
+
+</tr>
+
+<tr class="c0">
+
+<td class="c38" colspan="3" rowspan="1">
+
+<em><strong>Telephone Speech</strong></em>
+
+</td>
+
+</tr>
+
+<tr class="c3">
+
+<td class="c17" colspan="1" rowspan="1">
+
+<span>yes now you know if if everybody like in August when everybody's on vacation or something we can dress a little more casual or</span>
+
+</td>
+
+<td class="c47" colspan="1" rowspan="1">
+
+<em>contradiction</em>
+
+</td>
+
+<td class="c21" colspan="1" rowspan="1">
+
+<span class="c4">August is a black out month for vacations in the company.</span>
+
+<span class="c5"></span>
+
+</td>
+
+</tr>
+
+<tr class="c3">
+
+<td class="c38" colspan="3" rowspan="1">
+
+<em><strong>9/11 Report</strong></em>
+
+</td>
+
+</tr>
+
+<tr class="c3">
+
+<td class="c17" colspan="1" rowspan="1">
+
+<span>At the other end of Pennsylvania Avenue, people began to line up for a White House tour.</span>
+
+</td>
+
+<td class="c37" colspan="1" rowspan="1">
+
+<em>entailment</em>
+
+</td>
+
+<td class="c35" colspan="1" rowspan="1">
+
+<span class="c4">People formed a line at the end of Pennsylvania Avenue.</span>
+
+<span class="c5"></span>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h4>Download</h4>
+
+<p>
+MultiNLI is distributed in a single ZIP file containing the corpus as both JSON lines (jsonl) and tab-separated text (txt).
+</p>
+
+<p>
+Download: <a href="multinli_1.0.zip">MultiNLI 1.0</a> (227MB, ZIP)
+</p>
+
+<h4>Previous versions</h4>
+
+<p>
+MultiNLI 0.9 differs from MultiNLI 1.0 only in the pairID and promptID fields in the training and development sets (and the attached paper), so results achieved on version 0.9 are still valid on 1.0. Version 0.9 can be downloaded <a href="multinli_0.9.zip">here</a>.
+</p>
+
+<h4>The Stanford NLI Corpus (SNLI)</h4>
+
+<p>
+MultiNLI is modeled after SNLI. The two corpora are distributed in the same formats, and for many applications, it may be productive to treat them as a single, larger corpus. You can find out more about SNLI <a href="https://nlp.stanford.edu/projects/snli/">here</a> and download it from an NYU mirror <a href="snli_1.0.zip">here</a>.
+</p>
+
+<h4>Data description paper and citation</h4>
+
+<p>
+A description of the data can be found <a href="paper.pdf">here</a> (PDF) or in the corpus package zip. If you use the corpus in an academic paper, please cite us:
+</p>
+
+<blockquote>
+<pre style="line-height: 1.2em;">
+@InProceedings{N18-1101,
+  author = "Williams, Adina
+            and Nangia, Nikita
+            and Bowman, Samuel",
+  title = "A Broad-Coverage Challenge Corpus for 
+           Sentence Understanding through Inference",
+  booktitle = "Proceedings of the 2018 Conference of 
+               the North American Chapter of the 
+               Association for Computational Linguistics:
+               Human Language Technologies, Volume 1 (Long
+               Papers)",
+  year = "2018",
+  publisher = "Association for Computational Linguistics",
+  pages = "1112--1122",
+  location = "New Orleans, Louisiana",
+  url = "http://aclweb.org/anthology/N18-1101"
+}
+</pre>
+</blockquote>
+
+<h4>Baselines, code, and analysis</h4>
+
+<p>
+The <a href="paper.pdf">data description paper</a> presents the following baselines:
+</p>
+
+<table class="c20" padding="4">
+<tbody>
+<tr class="c3">
+<td class="c48" colspan="1" rowspan="1">
+<strong>Model&nbsp;</strong>
+</td>
+<td class="c46" colspan="1" rowspan="1">
+<strong>Matched Test Acc.&nbsp;</strong>
+</td>
+<td class="c41" colspan="1" rowspan="1">
+<strong>Mismatched Test Acc.</strong>
+</td>
+</tr>
+<tr class="c3">
+<td class="c34" colspan="1" rowspan="1">
+<span class="c7"><strong>Most Frequent Class</strong></span>
+</td>
+<td class="c49" colspan="1" rowspan="1">
+<span class="c7">36.5%</span>
+</td>
+<td class="c44" colspan="1" rowspan="1">
+<span class="c7">35.6%</span>
+</td>
+</tr>
+<tr class="c3">
+<td class="c34" colspan="1" rowspan="1">
+<span class="c7"><strong>CBOW</strong></span>
+</td>
+<td class="c49" colspan="1" rowspan="1">
+<span class="c7">65.2%</span>
+</td>
+<td class="c44" colspan="1" rowspan="1">
+<span class="c7">64.6%</span>
+</td>
+</tr>
+<tr class="c3">
+<td class="c34" colspan="1" rowspan="1">
+<span class="c7"><strong>BiLSTM</strong></span>
+</td>
+<td class="c49" colspan="1" rowspan="1">
+67.5%
+</td>
+<td class="c44" colspan="1" rowspan="1">
+67.1%
+</td>
+</tr>
+<tr class="c3">
+<td class="c34" colspan="1" rowspan="1">
+<span class="c7"><strong>ESIM</strong></span>
+</td>
+<td class="c49" colspan="1" rowspan="1">
+<strong>72.4%</strong>
+</td>
+<td class="c44" colspan="1" rowspan="1">
+<strong>71.9%</strong>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Note that the ESIM relies on attention between sentences and would be ineligible for inclusion in the RepEval competition. All three models are trained on a mix of MultiNLI and SNLI and use <a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> word vectors. Code (TensorFlow/Python) is available <a href="https://github.com/NYU-MLL/multiNLI">here</a>, alongside a script to reproduce the categories used in the error analysis in the paper.</p>
+
+<p>Additional analysis-oriented datasets are available as part of <a href="https://gluebenchmark.com">GLUE</a> and <a href="https://abhilasharavichander.github.io/NLI_StressTest/">here</a>.</p>
+
+<!-- <h4>Supplemental annotations</h4>
+
+<p>
+We have annotated roughly 1000 development set examples with tags reflecting properties like the presence of negation, numerical reasoning, or high lexical overlap. We expect that these tags may be helpful when conducting error analysis. We include a helper Python script for this purpose. Note that these were released for use during the RepEval 2017 shared task, and are not the same as the newer tags described in the paper. These tags must be downloaded separately here:
+</p>
+
+<p>
+Download: <a href="multinli_1.0_annotations.zip">MultiNLI 1.0 supplemental annotations</a> (15KB, ZIP)
+</p>
+
+<h5>Baseline results by tag: Matched</h5>
+
+<table class="c10"><tbody><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>MODEL</strong></span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>CBOW</strong></span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>BiLSTM</strong></span></p></td><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>ESIM</strong></span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>CONDITIONAL</strong></span></p></td><td class="c9" colspan="1" rowspan="1"><p class="c0"><span class="c20">100%</span></p></td><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c20">100%</span></p></td><td class="c7" colspan="1" rowspan="1"><p class="c0"><span class="c20">100%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>WORD_OVERLAP</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">38%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">50%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">50%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>NEGATION</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">60%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">71%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">76%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>ANTO</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">67%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">67%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">67%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>LONG_SENTENCE</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">42%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">50%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">75%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>TENSE_DIFFERENCE</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">64%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">64%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">73%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>ACTIVE/PASSIVE</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">88%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">75%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">88%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>PARAPHRASE</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">84%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">78%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">89%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>QUANTITY/TIME_REASONING</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">33%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">50%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">33%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>COREF</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">84%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">84%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">83%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>QUANTIFIER</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">64%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">64%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">69%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>MODAL</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">71%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">66%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">78%</span></p></td></tr><tr class="c6"><td class="c3" colspan="1" rowspan="1"><p class="c0"><span class="c20"><strong>BELIEF</strong></span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c0"><span class="c20">71%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">74%</span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c0"><span class="c20">65%</span></p></td></tr></tbody></table>
+
+<h5>Baseline results by tag: Mismatched</h5>
+
+<table class="c7"><tbody><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>Tag</strong></span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>CBOW</strong></span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>BiLSTM</strong></span></p></td><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>ESIM</strong></span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>CONDITIONAL</strong></span></p></td><td class="c10" colspan="1" rowspan="1"><p class="c3"><span class="c20">80%</span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c3"><span class="c20">100%</span></p></td><td class="c4" colspan="1" rowspan="1"><p class="c3"><span class="c20">60%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>WORD_OVERLAP</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">57%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">57%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">62%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>NEGATION</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">62%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">69%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">71%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>ANTO</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">67%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">58%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">58%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>LONG_SENTENCE</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">42%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">55%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">69%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>TENSE_DIFFERENCE</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">68%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">71%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">79%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>ACTIVE/PASSIVE</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">91%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">82%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">91%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>PARAPHRASE</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">81%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">81%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">84%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>QUANTITY/TIME_REASONING</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">31%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">46%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">54%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>COREF</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">75%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">80%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">75%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>QUANTIFIER</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">65%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">70%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">72%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>MODAL</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">68%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">64%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">76%</span></p></td></tr><tr class="c6"><td class="c1" colspan="1" rowspan="1"><p class="c3"><span class="c20"><strong>BELIEF</strong></span></p></td><td class="c5" colspan="1" rowspan="1"><p class="c3"><span class="c20">69%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">73%</span></p></td><td class="c0" colspan="1" rowspan="1"><p class="c3"><span class="c20">67%</span></p></td></tr></tbody></table> -->
+
+<h4>Test set and leaderboard</h4>
+
+
+<p>
+To evaluate your system on the full test set, use the following Kaggle in Class competitions. You do not need to submit code to evaluate your model, and you may evaluate under a psuedonym, but you are expected to post a brief description of your model in the competition discussion board.</p>
+<ul>
+	<li> <a href="https://inclass.kaggle.com/c/multinli-matched-open-evaluation">MultiNLI Matched</a> </li>
+	<li> <a href="https://inclass.kaggle.com/c/multinli-mismatched-open-evaluation">MultiNLI Mismatched</a> </li>
+</ul>
+
+<p>
+These competitions will be open indefinitely. Evaluations on a subset of the test set had previously been conducted with different leaderboards through the <a href="https://repeval2017.github.io/shared/">RepEval 2017 Workshop</a>. 
+</p>
+
+<p>
+Researchers interested in multi-task learning and general-purpose representation learning can also access the test set through a separate leaderboard on the <a href="https://gluebenchmark.com">GLUE platform</a>.
+</p>
+
+<p>The best result (state of the art) that we've seen written up in a paper is 82.1/81.4 from <a href="https://s3-us-west-2.amazonaws.com/openai-assets/research-covers/language-unsupervised/language_understanding_paper.pdf">Radford et al. 2018</a>.</p>
+
+<h4>Related Resources</h4>
+
+<p>
+The <a href="../xnli">XNLI</a> corpus provides additional development and test sets for MultiNLI in fifteen languages.</p>
+
+<p>
+Evaluations on the <em>hard</em> subset of the test set used in <a href="https://arxiv.org/pdf/1803.02324.pdf">Gururangan et al. '18</a> are available separately (<a href="https://www.kaggle.com/c/multinli-matched-open-hard-evaluation/">matched</a>/<a href="https://www.kaggle.com/c/multinli-mismatched-open-hard-evaluation/">mismatched</a>). 
+</p>
+
+
+<h4>License</h4>
+
+<p>
+See details in the <a href="paper.pdf">data description paper</a>.
+</p>
+
+<h4>Thanks</h4>
+
+<p>
+This work was made possible by a Google Faculty Research Award. We also thank George Dahl, the organizers
+of the RepEval 2016 and RepEval 2017 workshops,
+Andrew Drozdov, Angeliki Lazaridou, and
+our other NYU colleagues for help and advice.
+</p>
+
+</div></div></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "model": "Qwen/Qwen3.5-9B",
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "selected_epoch": 2,
+  "tensor_sha256": "9b3564ad05e812b1a87ed8ba3fbd16b215da1347517682b6a1b56fc6a7661e3a",
+  "file_sha256": "513f1f09d903f24b86f120e27594c682d3f2b733f763a7c94cd5e9723509cd48",
+  "source_checkpoint_sha256": "a902952e14ed0f7c8a77059eedeb21a2cc674210a7f7d2655dfe6f9f8cd09233",
+  "precision": "float32",
+  "gate_after": 16,
+  "threshold": 0.5,
+  "max_length": 2048,
+  "system_prompt": "You are a helpful assistant.",
+  "enable_thinking": false,
+  "rank": 16,
+  "alpha": 32,
+  "first_adapted_layer": 17,
+  "last_adapted_layer": 32,
+  "projections": 124,
+  "parameters": 21639168,
+  "release_selection": "selected for private release; original checkpoint unchanged",
+  "source_config_sha256": "fd63269ee46ff22c6bbb3c3dcbeed6844fa75f17ad3bb8b552c0ea102d02be7b"
+}

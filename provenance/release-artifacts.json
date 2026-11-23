@@ -1,0 +1,564 @@
+{
+  "demo_wheel": {
+    "filename": "thesystem-0.1.0rc3-py3-none-any.whl",
+    "purpose": "Inference demos without a memory-capacity cutoff; reference notebooks 03–05 retain 0.1.0rc1",
+    "release_manifest_sha256": "ca2a1bbbf6648940eb6f76ad42a4b8460b5990bdd52c0171f3d44db12e25ee97",
+    "schema": 1,
+    "sha256": "f315e2cf911edd113bbde3720ef36ba8dd33d2437b2d1e02c4e00ac40cca12c1",
+    "size": 116291,
+    "source_commit": "71085f68b57b1ac5821841c5a428a1e25e54f670",
+    "source_repository": "https://github.com/bqpro1/TheSystem",
+    "version": "0.1.0rc3"
+  },
+  "evaluation_wheel": {
+    "filename": "thesystem-0.1.0rc4-py3-none-any.whl",
+    "purpose": "Reference evaluation without a memory-capacity cutoff; model math and scoring unchanged; inference demos retain 0.1.0rc3",
+    "release_manifest_sha256": "ca2a1bbbf6648940eb6f76ad42a4b8460b5990bdd52c0171f3d44db12e25ee97",
+    "schema": 1,
+    "sha256": "255bad2fb39360aeb05ef497ba477c1cc9893107d27bce4343ff0d3d37aa0e00",
+    "size": 117367,
+    "source_commit": "08d1213a370faa7303fda581eadf009084422dc9",
+    "source_repository": "https://github.com/bqpro1/TheSystem",
+    "version": "0.1.0rc4"
+  },
+  "pages_enabled": false,
+  "repositories": {
+    "data": {
+      "files": {
+        ".gitattributes": {
+          "sha256": "f43a4a4facee2f8f2a8206d02dbb76900ba84ccdae3ca1a7e81e298cf455f156",
+          "size": 2590
+        },
+        "README.md": {
+          "sha256": "e78bc6f855ea5b7604833e9b46fc0975263db35ace8839cdfdcd6e8973de5950",
+          "size": 1618
+        },
+        "data/fast/data-manifest.json": {
+          "sha256": "38b2ff509b92d15ee356a6e24a9e35e1f05baeef181a18441008b49478550dc5",
+          "size": 2527
+        },
+        "data/fast/dataset/diverse_train.jsonl": {
+          "sha256": "0adb4c7530abfb1cc91315258cb9783ffdf3e0be2674ff1d9f456411ec35109f",
+          "size": 89444730
+        },
+        "data/fast/dataset/fresh_decisions.jsonl": {
+          "sha256": "5661b6f6b1edc6f5384182e4cfbcf501585d7008f3785fa2fa414a024d64c8f2",
+          "size": 841388
+        },
+        "data/fast/dataset/new_test.jsonl": {
+          "sha256": "eb0e2df6635cfa8a7c2e5f2132592d36f3ec548abc814e5faafb8e78f55ef934",
+          "size": 10961288
+        },
+        "data/fast/dataset/new_validation.jsonl": {
+          "sha256": "d9e1e876132cd473613209ab2de7c9b8752367cc7e6a5b2ef603f4704ce5ac18",
+          "size": 11020097
+        },
+        "data/fast/dataset/old_test.jsonl": {
+          "sha256": "2c6428369121121bb4db5344713215f25f8cb7c3e5bb3a052f60a3dac2587a82",
+          "size": 7062158
+        },
+        "data/fast/dataset/old_validation.jsonl": {
+          "sha256": "5bceedbee15c38451695677b781511eea1e7aec9bd1898219aec5ed3aecd488f",
+          "size": 6618470
+        },
+        "data/fast/dataset/writing.jsonl": {
+          "sha256": "7dc8b9de08fc7e2190a0515a01f99c07ef44a220080cf2473c0fde582dc7bba0",
+          "size": 5513
+        },
+        "data/original/data/decision-test.jsonl": {
+          "sha256": "dc5dcaa13a13e97f7064ccb92803af2be86a48752aac4fa181ae38c5afb336b0",
+          "size": 7268078
+        },
+        "data/original/data/decision-train.jsonl": {
+          "sha256": "d9c9960399092ac88d806b9edb58f22afca403b66c8bf6c9e25a93553c280261",
+          "size": 55816972
+        },
+        "data/original/data/decision-validation.jsonl": {
+          "sha256": "37cb935adab87cb3d4bfc838836cf9b49d6db16e90114dd7b3456ed3af5be6a1",
+          "size": 7055940
+        },
+        "data/original/data/fast-test.jsonl": {
+          "sha256": "29b7e5eb6e3d75a5d3d936705ed5004b5ae74101bd34a512782d6245e0062e21",
+          "size": 6345886
+        },
+        "data/original/data/fast-train.jsonl": {
+          "sha256": "0cfda97213aadc24b1b0ef5ab4f7d54a566563987e88ac8c9b564cf3faaa5598",
+          "size": 81900920
+        },
+        "data/original/data/fast-validation.jsonl": {
+          "sha256": "c9d4c694d64aa79eb5d0ba4de53f8ea13d523969359afebb376f585bb7118262",
+          "size": 5890733
+        },
+        "data/original/manifest.json": {
+          "sha256": "ecd9fd5784acc705b30a3c084f8b6099c2b250a2fb194aec7d925503eee828ed",
+          "size": 6239
+        },
+        "data/public/aegis2.jsonl": {
+          "sha256": "2d10424f7d2b06e9c38fe443f9cfb10eb958b4eb37cbec2bed4d990d109374b2",
+          "size": 357563
+        },
+        "data/public/paws.jsonl": {
+          "sha256": "ffc7388bbf027272b1c2175cd8d4d3591b63006696b2f9889bf70fccd457d167",
+          "size": 226802
+        },
+        "data/public/pubmedqa.jsonl": {
+          "sha256": "8ee766a759a60280373f45a19a62c9e36462b1176508f193621095e102403a40",
+          "size": 530605
+        },
+        "data/public/squad2.jsonl": {
+          "sha256": "95316d9d810d4827d86053e9199e15e865bad3fa4b65cbcb742a54433fcdfdd7",
+          "size": 560408
+        },
+        "data/public/vitaminc-dev.jsonl": {
+          "sha256": "6144a345cb8846b6594f07a0037b1221b2d9633b20d8a9bfd14f9111d15965bc",
+          "size": 696724
+        },
+        "evidence/reference-results/lora/decisions/aegis2.jsonl": {
+          "sha256": "3d381df64525e492e46be0a600d4d7e687baf567586547bef8d6148dd1b60f2b",
+          "size": 103131
+        },
+        "evidence/reference-results/lora/decisions/paws.jsonl": {
+          "sha256": "58c6e5c2db27a415f7fb84b8ee430b047cf5f2c4d809c279b841ae58f7a09a0b",
+          "size": 86062
+        },
+        "evidence/reference-results/lora/decisions/pubmedqa.jsonl": {
+          "sha256": "d4c1985b4c40a2c9b19933d44de455c829276250167f686ce093646f170c01eb",
+          "size": 96727
+        },
+        "evidence/reference-results/lora/decisions/squad2.jsonl": {
+          "sha256": "df7c58785368e9f199c09375902ee02394a62d7aedc02af6aa1f4dfe87f96448",
+          "size": 114192
+        },
+        "evidence/reference-results/lora/decisions/vitaminc-dev.jsonl": {
+          "sha256": "8df011b25d1b2531d2668ffccbc4fd711cfee87510983c41a023f49f1aefab08",
+          "size": 268493
+        },
+        "evidence/reference-results/lora/paired_writing.jsonl": {
+          "sha256": "995c569986fd091b4aa2b0d0db79916664fe5875dc1a520eea0d04a31640a240",
+          "size": 390752
+        },
+        "evidence/reference-results/lora/routing_historical.jsonl": {
+          "sha256": "78241005a06cd0c8fbbdf3840be9372e5957bd76da034a209ab45b769ca67ae3",
+          "size": 987190
+        },
+        "evidence/reference-results/lora/writing.jsonl": {
+          "sha256": "fecf52aee83918444e4cc5ea9a24779b77e3a36c08fc75458bcd41c4439e3cbd",
+          "size": 347364
+        },
+        "evidence/reference-results/probe/decisions/aegis2.jsonl": {
+          "sha256": "38809e2525ebce28f9c48b3910c5cd2b99cd98f0a64a746c6708fa65d14fd8ef",
+          "size": 122919
+        },
+        "evidence/reference-results/probe/decisions/paws.jsonl": {
+          "sha256": "6052ccefdb043811b7e87ebb40d4589eafd4ece5081e1b00cbd8973a610cec2d",
+          "size": 105585
+        },
+        "evidence/reference-results/probe/decisions/pubmedqa.jsonl": {
+          "sha256": "fc3baefb14f79fd099544e5ff8ddc3f9fc28416c0a9b454c44c4731815c9e3b7",
+          "size": 124116
+        },
+        "evidence/reference-results/probe/decisions/squad2.jsonl": {
+          "sha256": "98924642ab0ed1e013bcd01225f90c4016751f67b85ef6e88b18ec072c2cc5b9",
+          "size": 137700
+        },
+        "evidence/reference-results/probe/decisions/vitaminc-dev.jsonl": {
+          "sha256": "c21311aef1256ca3f698683df52e49ca1862735da05674ba6f07002e65ca6ce0",
+          "size": 334699
+        },
+        "evidence/reference-results/probe/paired_writing.jsonl": {
+          "sha256": "995c569986fd091b4aa2b0d0db79916664fe5875dc1a520eea0d04a31640a240",
+          "size": 390752
+        },
+        "evidence/reference-results/probe/routing_historical.jsonl": {
+          "sha256": "78241005a06cd0c8fbbdf3840be9372e5957bd76da034a209ab45b769ca67ae3",
+          "size": 987190
+        },
+        "evidence/reference-results/probe/writing.jsonl": {
+          "sha256": "4852a9a2503da596e52f8f4cf2e1df3d453c5d3dcfd43014bfc49117ed9183fd",
+          "size": 610809
+        },
+        "evidence/reference-results/provenance.json": {
+          "sha256": "e7eaabf33b86f97425fd87b88dad141808f4faa842c516079191fa5e8902b67f",
+          "size": 3808
+        },
+        "licenses/README.md": {
+          "sha256": "9cb33bcf9481dd262b35362991a7f4a4c061f35868a6180a23ea7cc889aee769",
+          "size": 1671
+        },
+        "licenses/external/CC-BY-SA-4.0.txt": {
+          "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5",
+          "size": 20138
+        },
+        "licenses/external/PAWS-LICENSE.txt": {
+          "sha256": "3f2d0f4e3fd88fa1bfeff353754da904c0060ec9d26c9266b8fda73ef98b8a25",
+          "size": 320
+        },
+        "licenses/external/aegis2-CARD.md": {
+          "sha256": "da2598e587850bacc77c0658f56d0ea430f55d1cf70b197eb06070871802d3ba",
+          "size": 14107
+        },
+        "licenses/external/paws-CARD.md": {
+          "sha256": "f281c5c5099f08da86c25f83419eedb01eaafaf0bb29b8eb14036249cfc97e89",
+          "size": 9795
+        },
+        "licenses/external/pubmedqa-CARD.md": {
+          "sha256": "977cd95a8e99322f9f7c080c6bf8906a100c843bc00c691c065b0830fd95f876",
+          "size": 5192
+        },
+        "licenses/external/pubmedqa-MIT.txt": {
+          "sha256": "8e75abc6136be91e5ae66dbb6dda07c8bc9dcc215ed3bc1ba3ae7fab7904777e",
+          "size": 1065
+        },
+        "licenses/external/squad2-CARD.md": {
+          "sha256": "7a6726352072e8517318959fe0438d4f45880affc041ced6da3bf2e4dec94c68",
+          "size": 8916
+        },
+        "licenses/external/vitaminc-dev-CARD.md": {
+          "sha256": "688850570b208199b526476919c720829f5dcf0b98d08f711c1c21aeabb5aace",
+          "size": 2643
+        },
+        "licenses/training/boolq/CARD.md": {
+          "sha256": "07447668f46c7c1e62e24b650ea2a73f1ab34f2b3759b1587c7b7a81b4bf1cf4",
+          "size": 6570
+        },
+        "licenses/training/boolq/UPSTREAM-README.md": {
+          "sha256": "0afe70d7cdbb644637592212f0cb15339389910bf00f35764ec3c545257aa663",
+          "size": 2675
+        },
+        "licenses/training/dolly/CARD.md": {
+          "sha256": "db06c60090a11b20e79d1933b2f316f781605f07761ff2ae2795d6523e3e960b",
+          "size": 8199
+        },
+        "licenses/training/helpsteer2/CARD.md": {
+          "sha256": "835effb9e7d9cd0e8b7b8c1816d1d97a8961a036543108e4a0b6a5e22712ff7b",
+          "size": 24960
+        },
+        "licenses/training/massive/CARD.md": {
+          "sha256": "9a74b2298db2cb509eb39725612ef5d5b9eb99d59ef7c960ab01f58526051e3d",
+          "size": 34420
+        },
+        "licenses/training/massive/LICENSE": {
+          "sha256": "c2e6ea015269147de02117ebdd91f30ef09831251f5345fa8365273b1db1d435",
+          "size": 18704
+        },
+        "licenses/training/multi_nli/CARD.md": {
+          "sha256": "e9bafc4de652caab3fb991ef3f1eded3b2385b7e1b2d1df2fd70523c376566fe",
+          "size": 8895
+        },
+        "licenses/training/multi_nli/DATA-PAPER.pdf": {
+          "sha256": "7b8b9945cafaf7f66c412404326880cc9ab5a69186d1e402d8ca909e7a547c7f",
+          "size": 194389
+        },
+        "licenses/training/multi_nli/OANC-TERMS.html": {
+          "sha256": "d8d0e58baa168e99451586e4de0c211f801cb0a43238593a51426d98d9dea605",
+          "size": 5249
+        },
+        "licenses/training/multi_nli/UPSTREAM-PAGE.html": {
+          "sha256": "48c8a61495f38a379d54fce92b5690421e1d7ee8f98fbc2cad8974cc282ae974",
+          "size": 22472
+        },
+        "licenses/training/oasst1/CARD.md": {
+          "sha256": "68483ac2fcc2f3f7779f453352363827678070ef35b6d746ccb2ca6958540fff",
+          "size": 10168
+        },
+        "licenses/training/qwen/CARD.md": {
+          "sha256": "c5f5a8c2dddab69cfbf05279235aa5fddb137939a06539c4c7637aa900fef6d0",
+          "size": 77643
+        },
+        "licenses/training/qwen/LICENSE": {
+          "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+          "size": 11544
+        },
+        "licenses/training/source-registry.json": {
+          "sha256": "c2532200b98fe71e2673048070baff23b97b3286bbf6f9fc1e45c4de4b321a39",
+          "size": 2342
+        },
+        "licenses/training/tablegpt/CARD.md": {
+          "sha256": "3edebf7163c305b4017825c0ecf4050e1f35e9cf6816f12d1590663a3f0808c5",
+          "size": 10298
+        },
+        "licenses/training/tablegpt/UPSTREAM-MIT-LICENSE": {
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+          "size": 1141
+        },
+        "licenses/training/texts/Apache-2.0.txt": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        },
+        "licenses/training/texts/CC-BY-3.0.txt": {
+          "sha256": "e6bc9e9c474700b708f568bac9e5a8a9bcb2b1dad53442f5ba449fcb848b8e76",
+          "size": 19467
+        },
+        "licenses/training/texts/CC-BY-4.0.txt": {
+          "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+          "size": 18657
+        },
+        "licenses/training/texts/CC-BY-SA-3.0.txt": {
+          "sha256": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+          "size": 22240
+        },
+        "licenses/training/winogrande/CARD.md": {
+          "sha256": "fd653689cc77706672b40cd040156ad57f4969656d25a14be645cffa8ef55176",
+          "size": 11171
+        },
+        "licenses/training/winogrande/CODE-LICENSE-ONLY": {
+          "sha256": "414e4dd608a58ed92f94021866a816f10953361a53ffef749afb5400a8af7525",
+          "size": 11368
+        },
+        "licenses/training/winogrande/UPSTREAM-README.md": {
+          "sha256": "6dc5ec952a9e5d6e553e2800c24b43b1fa8add70d998e60b76262e2195413efe",
+          "size": 4563
+        },
+        "licenses/training/winogrande/license-manifest.json": {
+          "sha256": "56af809084bbe20b9aa7996291291fcecf592e6e0e1da3601cf34f0d16efccf8",
+          "size": 174
+        },
+        "provenance/datasets.json": {
+          "sha256": "816e2dc0d2b397947e0fab708117d9588d9101585bd02c0ccea780a485d8f52f",
+          "size": 3538
+        },
+        "provenance/published-results.json": {
+          "sha256": "79affc0825336afa7a728018ffccc66fb7f77a99dc0e6e9fde77e569105788df",
+          "size": 1224
+        },
+        "provenance/subset-manifests/aegis2-manifest.json": {
+          "sha256": "5c76ac713ec33eb5515349a6b04bc03696805cc5e08ebdafbd1695ed08f8846b",
+          "size": 11833
+        },
+        "provenance/subset-manifests/paws-manifest.json": {
+          "sha256": "4e7359ab58484e4bf716e916f688360f5dd3da41e3760a5d3cdeef03ee553069",
+          "size": 4178
+        },
+        "provenance/subset-manifests/pubmedqa-manifest.json": {
+          "sha256": "c358a651b45ca0f4ed4853af22ee2afd1a4f3040e1567ca93e5923130689d970",
+          "size": 6230
+        },
+        "provenance/subset-manifests/squad2-manifest.json": {
+          "sha256": "50bb24a247c606bb13fffc36ca6e2aa3f126099348dc0458c3bc42509117e196",
+          "size": 11385
+        },
+        "provenance/subset-manifests/vitaminc-dev-manifest.json": {
+          "sha256": "30bd72d23b3e58aeae8184024e05bcc3decbaf14a4b513cb659b3a6ee7d26fe3",
+          "size": 23973
+        }
+      },
+      "payload_revision": "b91b2c907790d811cedf45e262355662c2ca2e40",
+      "release_files_revision": "bae25125881343099c264e9d1bb3ff03a0b1b5e2",
+      "repo_id": "Lbuk/TheSystem-Data",
+      "repo_type": "dataset"
+    },
+    "lora": {
+      "demo_wheel_revision": "d03d2d9475a3e1801403f8cffa7fb3d05b11187e",
+      "evaluation_helper_revision": "2a13c9d4ede98283ca347334142ca9fd1b04a689",
+      "evaluation_wheel_revision": "529bafeed6e60000b429f99b4afbc8f6e26252e4",
+      "files": {
+        ".gitattributes": {
+          "sha256": "77e958fde48102fb8ecf67be5b8f43c644188e30bae09428a18ff3489dcf5afc",
+          "size": 1622
+        },
+        "DEMO-WHEEL-PROVENANCE.json": {
+          "sha256": "94c982062f9abf604e0c91a6ace663f75aa0396b37f9700551b4d76e8d6f4bd1",
+          "size": 529
+        },
+        "EVALUATION-WHEEL-PROVENANCE.json": {
+          "sha256": "8cea58f63fb96a4a8dd291056825a3d8d191455e80c61d0be9a29bdae085480a",
+          "size": 553
+        },
+        "LICENSE": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        },
+        "README.md": {
+          "sha256": "a89a9294ad2f2f0bca164b09d67bd97476cc52c2ea1caa4acd45e12bbe082120",
+          "size": 4471
+        },
+        "WHEEL-PROVENANCE.json": {
+          "sha256": "0dae0e8f60c620a45732132f662f34ba7777a26995ac66b1a4c752fdca8322b5",
+          "size": 416
+        },
+        "checkpoints/fast/fast.json": {
+          "sha256": "e5b350c855f3caeded67d6a02b986bc739682b66469e7afb9a06447ed39b89b1",
+          "size": 761
+        },
+        "checkpoints/fast/fast.safetensors": {
+          "sha256": "ac50f70876d957f4aacf787b821716f625988951d9f286b36b0cb9742a191bc8",
+          "size": 16524
+        },
+        "checkpoints/lora/config.json": {
+          "sha256": "023afd725fe096b4af34f7e5d24d790a262c471c113498a52608f2c251ce2b60",
+          "size": 865
+        },
+        "checkpoints/lora/weights.safetensors": {
+          "sha256": "513f1f09d903f24b86f120e27594c682d3f2b733f763a7c94cd5e9723509cd48",
+          "size": 86584160
+        },
+        "checkpoints/original-fast/config.json": {
+          "sha256": "cd72757cb206e529b5983c60007f8800c98b4bf6f531056cc9d2be96de3860d5",
+          "size": 732
+        },
+        "checkpoints/original-fast/weights.safetensors": {
+          "sha256": "23dfddbf60bea5f25226322d8cab3782b67950191ad26bd953449f1f7e2debf1",
+          "size": 16524
+        },
+        "evaluation.ipynb": {
+          "sha256": "837cbdb9bd37efedd51e46d851c90ca5a3d19e803cf1e7126213bb3a457413e1",
+          "size": 11031
+        },
+        "licenses/QWEN-APACHE-2.0.txt": {
+          "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+          "size": 11544
+        },
+        "notebook.ipynb": {
+          "sha256": "71537845e88852ab4830515a5b09fa373f171de134ac7932c461964f4b0bcc33",
+          "size": 11764
+        },
+        "prepare_evaluation.py": {
+          "sha256": "f2a68dee15d95d2a9bda090e69c50232b1fb245da6e68b49ea4dd7f9d938f1b5",
+          "size": 12340
+        },
+        "prepare_runtime.py": {
+          "sha256": "a0d1904552b5296ba7c3555fac79bb770b1a4efb75005a5d57e3580b7b3574bc",
+          "size": 13274
+        },
+        "thesystem-0.1.0rc1-py3-none-any.whl": {
+          "sha256": "4be1c5ac6d6b9f15c89f06d16b43e734afdb830d3f64b0292bf465b5484119ac",
+          "size": 113850
+        },
+        "thesystem-0.1.0rc2-py3-none-any.whl": {
+          "sha256": "e70ccd81bc838f816dd52799b96eb62bb3a1dedd227433f9c8c730f164b6985b",
+          "size": 116302
+        },
+        "thesystem-0.1.0rc3-py3-none-any.whl": {
+          "sha256": "f315e2cf911edd113bbde3720ef36ba8dd33d2437b2d1e02c4e00ac40cca12c1",
+          "size": 116291
+        },
+        "thesystem-0.1.0rc4-py3-none-any.whl": {
+          "sha256": "255bad2fb39360aeb05ef497ba477c1cc9893107d27bce4343ff0d3d37aa0e00",
+          "size": 117367
+        },
+        "tokenizer/tokenizer.json": {
+          "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+          "size": 12807982
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+          "size": 16710
+        }
+      },
+      "payload_revision": "b8b3c58f0e7a51c230c4dd0c88045698c3963e6b",
+      "release_files_revision": "da9d32fddb5961e1d5b73c8a55a9037a37b76c53",
+      "repo_id": "Lbuk/TheSystem-9B-LoRA",
+      "repo_type": "model",
+      "setup_helper_revision": "f454fc4eba1ae7eb84f1fb9b9d710f66be8792f4"
+    },
+    "probe": {
+      "demo_wheel_revision": "9b7ed1d287bc151d1db7e3c51d5d4d933195d976",
+      "evaluation_helper_revision": "d66b3452f760f9efa5ba8ffecfb6b1759a94f9ff",
+      "evaluation_wheel_revision": "c533a07ef0606b5e08ade1522f6ae030247ae4a7",
+      "files": {
+        ".gitattributes": {
+          "sha256": "77e958fde48102fb8ecf67be5b8f43c644188e30bae09428a18ff3489dcf5afc",
+          "size": 1622
+        },
+        "DEMO-WHEEL-PROVENANCE.json": {
+          "sha256": "94c982062f9abf604e0c91a6ace663f75aa0396b37f9700551b4d76e8d6f4bd1",
+          "size": 529
+        },
+        "EVALUATION-WHEEL-PROVENANCE.json": {
+          "sha256": "8cea58f63fb96a4a8dd291056825a3d8d191455e80c61d0be9a29bdae085480a",
+          "size": 553
+        },
+        "LICENSE": {
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "size": 11358
+        },
+        "README.md": {
+          "sha256": "5c4b28e956fa057d3191e036cb2964602ce79075a32f68ab09c252d052b41fba",
+          "size": 4511
+        },
+        "WHEEL-PROVENANCE.json": {
+          "sha256": "0dae0e8f60c620a45732132f662f34ba7777a26995ac66b1a4c752fdca8322b5",
+          "size": 416
+        },
+        "checkpoints/fast/fast.json": {
+          "sha256": "e5b350c855f3caeded67d6a02b986bc739682b66469e7afb9a06447ed39b89b1",
+          "size": 761
+        },
+        "checkpoints/fast/fast.safetensors": {
+          "sha256": "ac50f70876d957f4aacf787b821716f625988951d9f286b36b0cb9742a191bc8",
+          "size": 16524
+        },
+        "checkpoints/probe-256/config.json": {
+          "sha256": "176375a6fedd18f65721576355fc3354eab3b3732cfef82d5ca064b22164c6db",
+          "size": 1549
+        },
+        "checkpoints/probe-256/heads.safetensors": {
+          "sha256": "17745c39e3a8478a65f4acb26d10f830ec8af010750cef2c33821c1de92122f9",
+          "size": 4230724
+        },
+        "evaluation.ipynb": {
+          "sha256": "837cbdb9bd37efedd51e46d851c90ca5a3d19e803cf1e7126213bb3a457413e1",
+          "size": 11031
+        },
+        "licenses/QWEN-APACHE-2.0.txt": {
+          "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a",
+          "size": 11544
+        },
+        "notebook.ipynb": {
+          "sha256": "bee9795623d366d34084b5a7c7f616f7af9d43df479f166fd0e2f95e814d4998",
+          "size": 11787
+        },
+        "prepare_evaluation.py": {
+          "sha256": "f2a68dee15d95d2a9bda090e69c50232b1fb245da6e68b49ea4dd7f9d938f1b5",
+          "size": 12340
+        },
+        "prepare_runtime.py": {
+          "sha256": "a0d1904552b5296ba7c3555fac79bb770b1a4efb75005a5d57e3580b7b3574bc",
+          "size": 13274
+        },
+        "thesystem-0.1.0rc1-py3-none-any.whl": {
+          "sha256": "4be1c5ac6d6b9f15c89f06d16b43e734afdb830d3f64b0292bf465b5484119ac",
+          "size": 113850
+        },
+        "thesystem-0.1.0rc2-py3-none-any.whl": {
+          "sha256": "e70ccd81bc838f816dd52799b96eb62bb3a1dedd227433f9c8c730f164b6985b",
+          "size": 116302
+        },
+        "thesystem-0.1.0rc3-py3-none-any.whl": {
+          "sha256": "f315e2cf911edd113bbde3720ef36ba8dd33d2437b2d1e02c4e00ac40cca12c1",
+          "size": 116291
+        },
+        "thesystem-0.1.0rc4-py3-none-any.whl": {
+          "sha256": "255bad2fb39360aeb05ef497ba477c1cc9893107d27bce4343ff0d3d37aa0e00",
+          "size": 117367
+        },
+        "tokenizer/tokenizer.json": {
+          "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+          "size": 12807982
+        },
+        "tokenizer/tokenizer_config.json": {
+          "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8",
+          "size": 16710
+        }
+      },
+      "payload_revision": "347e6accd5dffa1829f7ba65ba60c92d49bcf272",
+      "release_files_revision": "9cbc732674180bd94971973def80243186fd829f",
+      "repo_id": "Lbuk/TheSystem-9B-Probe-256",
+      "repo_type": "model",
+      "setup_helper_revision": "39ce46e600a9ad7a2d5bf216b17bef71fe40b599"
+    }
+  },
+  "schema": 1,
+  "version": "0.1.0rc4",
+  "visibility": "private",
+  "wheel": {
+    "filename": "thesystem-0.1.0rc1-py3-none-any.whl",
+    "release_manifest_sha256": "ca2a1bbbf6648940eb6f76ad42a4b8460b5990bdd52c0171f3d44db12e25ee97",
+    "schema": 1,
+    "sha256": "4be1c5ac6d6b9f15c89f06d16b43e734afdb830d3f64b0292bf465b5484119ac",
+    "size": 113850,
+    "source_commit": "94da0f0eb64242cf31b543c6a755996c24961806",
+    "source_repository": "https://github.com/bqpro1/TheSystem",
+    "version": "0.1.0rc1"
+  }
+}

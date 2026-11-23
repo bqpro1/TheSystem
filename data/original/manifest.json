@@ -1,0 +1,218 @@
+{
+  "version": "thesystem-9b-data-v1",
+  "seed": 20261022,
+  "counts": {
+    "train": {
+      "decision": 18000,
+      "fast": 32000
+    },
+    "validation": {
+      "decision": 2000,
+      "fast": 2400
+    },
+    "test": {
+      "decision": 2000,
+      "fast": 2400
+    }
+  },
+  "decision_mix": {
+    "train": {
+      "massive": 4000,
+      "boolq": 4000,
+      "multi_nli": 4000,
+      "helpsteer2": 2000,
+      "winogrande": 4000
+    },
+    "validation": {
+      "massive": 400,
+      "boolq": 400,
+      "multi_nli": 400,
+      "helpsteer2": 400,
+      "winogrande": 400
+    },
+    "test": {
+      "massive": 400,
+      "boolq": 400,
+      "multi_nli": 400,
+      "helpsteer2": 400,
+      "winogrande": 400
+    }
+  },
+  "fast_mix": {
+    "train": {
+      "labels": {
+        "1": 16000,
+        "0": 16000
+      },
+      "generation_categories": {
+        "prose": 6491,
+        "table_csv": 2016,
+        "json_extraction": 2844,
+        "code_sql": 1800,
+        "short_answer": 1719,
+        "discuss_options": 1130
+      },
+      "origins": {
+        "decision-derived selection": 14000,
+        "public instruction": 9000,
+        "authored selection about public instruction": 2000,
+        "authored operation on source content": 7000
+      },
+      "sources": {
+        "massive": 6395,
+        "oasst1": 4545,
+        "dolly": 4643,
+        "helpsteer2": 2658,
+        "multi_nli": 3342,
+        "boolq": 5600,
+        "tablegpt": 1812,
+        "winogrande": 3005
+      },
+      "formats_by_label": {
+        "0": {
+          "json": 3261,
+          "native": 5003,
+          "yaml": 3260,
+          "plain": 1389,
+          "markdown": 3087
+        },
+        "1": {
+          "native": 3261,
+          "plain": 3164,
+          "json": 3254,
+          "markdown": 3125,
+          "yaml": 3196
+        }
+      }
+    },
+    "validation": {
+      "labels": {
+        "0": 1200,
+        "1": 1200
+      },
+      "generation_categories": {
+        "table_csv": 186,
+        "prose": 320,
+        "short_answer": 171,
+        "json_extraction": 216,
+        "code_sql": 196,
+        "discuss_options": 111
+      },
+      "origins": {
+        "public instruction": 700,
+        "decision-derived selection": 1000,
+        "authored operation on source content": 500,
+        "authored selection about public instruction": 200
+      },
+      "sources": {
+        "tablegpt": 206,
+        "winogrande": 181,
+        "massive": 475,
+        "boolq": 514,
+        "helpsteer2": 107,
+        "oasst1": 367,
+        "dolly": 327,
+        "multi_nli": 223
+      },
+      "formats_by_label": {
+        "0": {
+          "yaml": 251,
+          "markdown": 252,
+          "native": 395,
+          "json": 215,
+          "plain": 87
+        },
+        "1": {
+          "yaml": 269,
+          "json": 240,
+          "markdown": 239,
+          "native": 232,
+          "plain": 220
+        }
+      }
+    },
+    "test": {
+      "labels": {
+        "1": 1200,
+        "0": 1200
+      },
+      "generation_categories": {
+        "discuss_options": 107,
+        "prose": 346,
+        "code_sql": 188,
+        "table_csv": 177,
+        "short_answer": 170,
+        "json_extraction": 212
+      },
+      "origins": {
+        "decision-derived selection": 1000,
+        "public instruction": 700,
+        "authored selection about public instruction": 200,
+        "authored operation on source content": 500
+      },
+      "sources": {
+        "boolq": 434,
+        "massive": 615,
+        "oasst1": 361,
+        "dolly": 331,
+        "multi_nli": 212,
+        "tablegpt": 208,
+        "helpsteer2": 112,
+        "winogrande": 127
+      },
+      "formats_by_label": {
+        "0": {
+          "markdown": 242,
+          "json": 207,
+          "native": 337,
+          "yaml": 198,
+          "xml": 162,
+          "plain": 54
+        },
+        "1": {
+          "xml": 401,
+          "yaml": 165,
+          "native": 158,
+          "plain": 155,
+          "markdown": 164,
+          "json": 157
+        }
+      }
+    }
+  },
+  "grouping": {
+    "near_duplicate_links": 934,
+    "unique_content": 44566,
+    "groups": 39227,
+    "method": "Exact normalized content and source groups; 128-permutation MinHash candidates, exact word-5-gram Jaccard>=0.85. Approximate candidate discovery, not exhaustive semantic deduplication."
+  },
+  "tokenizer": {
+    "model": "Qwen/Qwen3.5-9B",
+    "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+    "files": [
+      {
+        "file": "tokenizer.json",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/tokenizer.json",
+        "sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+      },
+      {
+        "file": "tokenizer_config.json",
+        "url": "https://huggingface.co/Qwen/Qwen3.5-9B/resolve/c202236235762e1c871ad0ccb60c8ee5ba337b9a/tokenizer_config.json",
+        "sha256": "316230d6a809701f4db5ea8f8fc862bc3a6f3229c937c174e674ff3ca0a64ac8"
+      }
+    ]
+  },
+  "token_limit": 2048,
+  "length_policy": "Full prompt including pinned Qwen text chat wrapper; enable_thinking=False; discard, never truncate.",
+  "requested_output": "No injected requested_output field; public prompts retained verbatim.",
+  "split_policy": "Upstream held-out data stays out of train. Group links take held-out priority. Without upstream test, validation groups are split; without any held-out data, groups are partitioned 80/10/10. MultiNLI mismatched is test. Selection and generation variants inherit the same group/split.",
+  "files": {
+    "data/decision-train.jsonl": "d9c9960399092ac88d806b9edb58f22afca403b66c8bf6c9e25a93553c280261",
+    "data/decision-validation.jsonl": "37cb935adab87cb3d4bfc838836cf9b49d6db16e90114dd7b3456ed3af5be6a1",
+    "data/decision-test.jsonl": "dc5dcaa13a13e97f7064ccb92803af2be86a48752aac4fa181ae38c5afb336b0",
+    "data/fast-train.jsonl": "0cfda97213aadc24b1b0ef5ab4f7d54a566563987e88ac8c9b564cf3faaa5598",
+    "data/fast-validation.jsonl": "c9d4c694d64aa79eb5d0ba4de53f8ea13d523969359afebb376f585bb7118262",
+    "data/fast-test.jsonl": "29b7e5eb6e3d75a5d3d936705ed5004b5ae74101bd34a512782d6245e0062e21"
+  },
+  "source_manifest_sha256": "c5a79df5cdc9dae31f84b0584e44573294a85d7a577a45af85522460cc2db16f"
+}

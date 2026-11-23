@@ -1,0 +1,11 @@
+{
+  "filename": "thesystem-0.1.0rc4-py3-none-any.whl",
+  "purpose": "Reference evaluation without a memory-capacity cutoff; model math and scoring unchanged; inference demos retain 0.1.0rc3",
+  "release_manifest_sha256": "ca2a1bbbf6648940eb6f76ad42a4b8460b5990bdd52c0171f3d44db12e25ee97",
+  "schema": 1,
+  "sha256": "255bad2fb39360aeb05ef497ba477c1cc9893107d27bce4343ff0d3d37aa0e00",
+  "size": 117367,
+  "source_commit": "08d1213a370faa7303fda581eadf009084422dc9",
+  "source_repository": "https://github.com/bqpro1/TheSystem",
+  "version": "0.1.0rc4"
+}

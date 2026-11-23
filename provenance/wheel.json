@@ -1,0 +1,10 @@
+{
+  "filename": "thesystem-0.1.0rc1-py3-none-any.whl",
+  "release_manifest_sha256": "ca2a1bbbf6648940eb6f76ad42a4b8460b5990bdd52c0171f3d44db12e25ee97",
+  "schema": 1,
+  "sha256": "4be1c5ac6d6b9f15c89f06d16b43e734afdb830d3f64b0292bf465b5484119ac",
+  "size": 113850,
+  "source_commit": "94da0f0eb64242cf31b543c6a755996c24961806",
+  "source_repository": "https://github.com/bqpro1/TheSystem",
+  "version": "0.1.0rc1"
+}

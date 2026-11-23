@@ -1,0 +1,17 @@
+{
+  "candidate_name": "diverse-42",
+  "gate_after": 16,
+  "hidden_size": 4096,
+  "known_test_writing_misroute_rate": 0.0215,
+  "model": "Qwen/Qwen3.5-9B",
+  "required_maximum": 0.01,
+  "revision": "c202236235762e1c871ad0ccb60c8ee5ba337b9a",
+  "safetensors_sha256": "ac50f70876d957f4aacf787b821716f625988951d9f286b36b0cb9742a191bc8",
+  "seed": 42,
+  "selected_epoch": 9,
+  "selected_gate_sha256": "ae23854dbfdb9502bec475b11661f6f1f7e779a0e6d5f9208bff7e27e6d7fba2",
+  "source_artifact_sha256": "20357ba838cc66e4c899ed2cb2b77511d85f1e341ecf9da3ae5a9d3ad2516397",
+  "threshold": 0.5,
+  "release_selection": "selected for private release; original checkpoint unchanged",
+  "source_config_sha256": "9e5fec2d3634fa29ab91d1a8af7fd474d873da5428a3af6b009e9278fcd5074f"
+}

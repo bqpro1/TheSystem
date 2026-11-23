@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please use this citation when referring to TheSystem."
+type: software
+title: TheSystem
+authors:
+  - given-names: Leszek
+    family-names: Bukowski
+version: 0.1.0rc4
+repository-code: "https://github.com/bqpro1/TheSystem"

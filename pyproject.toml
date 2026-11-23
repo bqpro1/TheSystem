@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thesystem"
+version = "0.1.0rc4"
+license = "Apache-2.0"
+description = "Frozen Qwen with a learned <FAST> gate and a probe or LoRA decision path"
+requires-python = ">=3.10"
+dependencies = ["huggingface-hub>=1.31,<2"]
+
+[project.optional-dependencies]
+audit = ["numpy==2.3.3"]
+gpu = [
+  "torch==2.14.0", "torchvision==0.29.0", "transformers==5.17.0",
+  "safetensors==0.8.0", "pillow==12.3.0", "accelerate==1.15.0",
+  "flash-linear-attention==0.5.2", "fla-core==0.5.2", "einops==0.8.2",
+  "causal-conv1d==1.7.0", "tqdm==4.67.1", "pandas==2.3.3",
+  "numpy==2.3.3", "ipywidgets==8.1.7"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+thesystem = ["release_manifest.json", "_vendor/PROVENANCE.json", "_vendor/*/requirements.txt"]

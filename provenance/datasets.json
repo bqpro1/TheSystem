@@ -1,0 +1,60 @@
+{
+  "nimble_revision": "b30ec429fcd78c15fa12a5d3b68c5fbc3bf0430f",
+  "subsets": {
+    "vitaminc-dev": {
+      "count": 599,
+      "families": 171,
+      "sha256": "6144a345cb8846b6594f07a0037b1221b2d9633b20d8a9bfd14f9111d15965bc",
+      "source_url": "https://huggingface.co/datasets/tals/vitaminc/resolve/be6febb761b0b2807687e61e0b5282e459df2fa0/dev.jsonl",
+      "source_revision": "be6febb761b0b2807687e61e0b5282e459df2fa0",
+      "raw_sha256": "544934677f5d133873e6d38f4557f8966f4efa5d3d70874ffe6913f2091b86b5",
+      "source_card_sha256": "688850570b208199b526476919c720829f5dcf0b98d08f711c1c21aeabb5aace",
+      "upstream_license": "CC BY-SA 3.0",
+      "publisher_manifest": "provenance/subset-manifests/vitaminc-dev-manifest.json"
+    },
+    "paws": {
+      "count": 250,
+      "families": 250,
+      "sha256": "ffc7388bbf027272b1c2175cd8d4d3591b63006696b2f9889bf70fccd457d167",
+      "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/161ece9501cf0a11f3e48bd356eaa82de46d6a09/labeled_final/test-00000-of-00001.parquet",
+      "source_revision": "161ece9501cf0a11f3e48bd356eaa82de46d6a09",
+      "raw_sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+      "source_card_sha256": "f281c5c5099f08da86c25f83419eedb01eaafaf0bb29b8eb14036249cfc97e89",
+      "upstream_license": "Google PAWS license: may be freely used for any purpose",
+      "publisher_manifest": "provenance/subset-manifests/paws-manifest.json"
+    },
+    "squad2": {
+      "count": 299,
+      "families": 31,
+      "sha256": "95316d9d810d4827d86053e9199e15e865bad3fa4b65cbcb742a54433fcdfdd7",
+      "source_url": "https://huggingface.co/datasets/rajpurkar/squad_v2/resolve/3ffb306f725f7d2ce8394bc1873b24868140c412/squad_v2/validation-00000-of-00001.parquet",
+      "source_revision": "3ffb306f725f7d2ce8394bc1873b24868140c412",
+      "raw_sha256": "0560174ab095c5ac0a8c8dc8da05f1625453c45a77e4ce9cabc6947ddfdd24cb",
+      "source_card_sha256": "7a6726352072e8517318959fe0438d4f45880affc041ced6da3bf2e4dec94c68",
+      "upstream_license": "CC BY-SA 4.0",
+      "publisher_manifest": "provenance/subset-manifests/squad2-manifest.json"
+    },
+    "aegis2": {
+      "count": 250,
+      "families": 250,
+      "sha256": "2d10424f7d2b06e9c38fe443f9cfb10eb958b4eb37cbec2bed4d990d109374b2",
+      "source_url": "https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0/resolve/d86bb8bedff51d25ac834ab7838f1cc61acb7a2c/test.json",
+      "source_revision": "d86bb8bedff51d25ac834ab7838f1cc61acb7a2c",
+      "raw_sha256": "b0a6d602260524866053cb34105194f074f2c2906e3691b68d43b9e6e9318f35",
+      "source_card_sha256": "da2598e587850bacc77c0658f56d0ea430f55d1cf70b197eb06070871802d3ba",
+      "upstream_license": "CC BY 4.0",
+      "publisher_manifest": "provenance/subset-manifests/aegis2-manifest.json"
+    },
+    "pubmedqa": {
+      "count": 250,
+      "families": 250,
+      "sha256": "8ee766a759a60280373f45a19a62c9e36462b1176508f193621095e102403a40",
+      "source_url": "https://huggingface.co/datasets/qiaojin/PubMedQA/resolve/9001f2853fb87cab8d220904e0de81ac6973b318/pqa_labeled/train-00000-of-00001.parquet",
+      "source_revision": "9001f2853fb87cab8d220904e0de81ac6973b318",
+      "raw_sha256": "3d56bd1abc11884579ecc3aab9dd3cdfce8b7cf54715daeca93b8022b7be231c",
+      "source_card_sha256": "977cd95a8e99322f9f7c080c6bf8906a100c843bc00c691c065b0830fd95f876",
+      "upstream_license": "MIT",
+      "publisher_manifest": "provenance/subset-manifests/pubmedqa-manifest.json"
+    }
+  }
+}

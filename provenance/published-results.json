@@ -1,0 +1,55 @@
+{
+  "evidence": "published reference aggregates, not rerun",
+  "retrieved": "2026-11-11",
+  "source_url": "https://github.com/bespokelabsai/nimble/blob/b30ec429fcd78c15fa12a5d3b68c5fbc3bf0430f/docs/PUBLIC_BENCHMARKS.md#results",
+  "source_sha256": "360ddfccd33cc646731fc8a9eea5fafbae94d796122a3b41b9943f4de3b8c4f0",
+  "nimble_revision": "594dfdcfb6f94e3d0c0db7535180d3c71689169a",
+  "jev_version": "1.13.0",
+  "subsets": {
+    "vitaminc-dev": {
+      "rows": 599,
+      "nimble": {
+        "accuracy_percent": 76.6
+      },
+      "jev": {
+        "accuracy_percent": 80.1
+      }
+    },
+    "paws": {
+      "rows": 250,
+      "nimble": {
+        "accuracy_percent": 82.8
+      },
+      "jev": {
+        "accuracy_percent": 89.2
+      }
+    },
+    "squad2": {
+      "rows": 299,
+      "nimble": {
+        "accuracy_percent": 80.6
+      },
+      "jev": {
+        "accuracy_percent": 82.9
+      }
+    },
+    "aegis2": {
+      "rows": 250,
+      "nimble": {
+        "accuracy_percent": 81.2
+      },
+      "jev": {
+        "accuracy_percent": 80.4
+      }
+    },
+    "pubmedqa": {
+      "rows": 250,
+      "nimble": {
+        "accuracy_percent": 75.6
+      },
+      "jev": {
+        "accuracy_percent": 77.2
+      }
+    }
+  }
+}
