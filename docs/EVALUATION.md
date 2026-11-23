@@ -1,6 +1,6 @@
 # Run the evaluation
 
-Open [notebook 03](../notebooks/03-Reproduce-Evaluation.ipynb) in a GPU runtime and run its cells in order. Leave `SMOKE = False` to evaluate all five benchmarks, or set it to `True` for a quick setup check. See the [setup and access instructions](REPRODUCIBILITY.md#setup-and-private-access).
+Open [notebook 03](../notebooks/03-Reproduce-Evaluation.ipynb) in a GPU runtime and run its cells in order. Leave `SMOKE = False` to evaluate all five benchmarks, or set it to `True` for a quick setup check. See the [setup and access instructions](REPRODUCIBILITY.md#setup-and-access).
 
 ## Decision accuracy
 

@@ -13,7 +13,7 @@ Model files and datasets are downloaded from immutable Hugging Face revisions an
 checked against `RELEASE-MANIFEST.json`. No private research checkout or cached
 features are required. The tokenizer and chat wrapper are pinned; thinking is off.
 
-## Setup and private access
+## Setup and access
 
 Use Python **3.12 or 3.13**. In Colab, select the latest runtime and a GPU
 with native BF16 support. Check the GPU and free memory reported by the
@@ -24,19 +24,9 @@ They run in BF16 without automatic quantization, CPU offload or input truncation
 Notebook 03 can run on an NVIDIA L4 with 22 GiB of visible GPU memory using its
 pinned CUDA 13 environment.
 
-Both model repositories include their matching demo as `notebook.ipynb`.
-To open a private notebook, visit the
-[probe notebook](https://huggingface.co/Lbuk/TheSystem-9B-Probe-256/blob/main/notebook.ipynb)
-or [LoRA notebook](https://huggingface.co/Lbuk/TheSystem-9B-LoRA/blob/main/notebook.ipynb)
-while signed in to Hugging Face, download it, and choose **File → Upload notebook**
-in Colab. For evaluation notebook 03,
-download the file from the private GitHub repository first and upload it the same
-way. The runtime downloads its wheel, weights and data using only Hugging Face
-authentication; it never needs a GitHub credential. Keep the uploaded copy private.
-
-If a direct Colab link returns HTTP 401 before the notebook opens, download and
-upload the file as described above. The runtime asks separately for a Hugging
-Face read token. [Colab notebook import instructions](https://research.google.com/colaboratory/faq.html).
+Open a notebook from the README's Colab links. The setup helpers, wheels, weights
+and datasets are public downloads. You can also download a notebook from GitHub
+and open it using **File → Upload notebook** in Colab.
 
 ### Demo setup (01–02)
 
@@ -63,11 +53,6 @@ build and accelerated kernels; the GPU extra alone does not build the extension.
 If setup asks for a restart, choose **Runtime → Restart session**. After Colab reconnects, click **Run all**.
 The helper reports four setup stages and elapsed-time heartbeats.
 Keep this reference environment separate from the lighter demo environment.
-
-For private downloads, supply a Hugging Face read token when **Prepare runtime**
-prompts for one. The prompt hides typed characters and replaces stale credentials.
-After a kernel restart, rerun the cell and enter the token again. Python and CLI
-callers can supply `HF_TOKEN` in the environment.
 
 ## Run order
 

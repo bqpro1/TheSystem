@@ -1,6 +1,6 @@
 # Exact release datasets
 
-Dataset bytes live in the private [Lbuk/TheSystem-Data](https://huggingface.co/datasets/Lbuk/TheSystem-Data)
+Dataset bytes live in [Lbuk/TheSystem-Data](https://huggingface.co/datasets/Lbuk/TheSystem-Data)
 repository. The release manifest pins its revision and every payload hash.
 This GitHub folder holds compact manifests, not duplicate dataset downloads.
 

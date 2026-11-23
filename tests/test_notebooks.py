@@ -94,7 +94,7 @@ class NotebookTests(unittest.TestCase):
         prepare = cells[0].replace(pinned, hashlib.sha256(helper).hexdigest())
         with patch.dict(sys.modules, {"setup_fixture": setup, "IPython.display": display}), \
                 patch.dict(os.environ), patch("sys.version_info", (3, 13)), \
-                patch("getpass.getpass", return_value="test-only") as token, \
+                patch("getpass.getpass") as token, \
                 patch("urllib.request.urlopen", side_effect=lambda *a, **k: io.BytesIO(helper)), \
                 redirect_stdout(io.StringIO()):
             session = {}
@@ -105,13 +105,14 @@ class NotebookTests(unittest.TestCase):
             self.assertNotIn("OUTPUT", session)
             self.assertIn("Runtime → Restart session", display.display.call_args.args[0])
             exec(prepare, session)
-            token.assert_called_once()
+            token.assert_not_called()
             setup.prepare_runtime.assert_called_once()
 
             fresh_session = {}
             exec(prepare, fresh_session)
             self.assertTrue(fresh_session["RUNTIME_READY"])
             self.assertFalse(fresh_session["RESTART_PENDING"])
+            token.assert_not_called()
 
     def preflight(self, name, python=(3, 12, 13), gpu="NVIDIA A100 80GB, 580.95.05, 81920\n"):
         output = io.StringIO()
@@ -208,7 +209,7 @@ class NotebookTests(unittest.TestCase):
                 node = next(n for n in ast.parse(source(name, "prepare-runtime")).body
                             if isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name) and n.targets[0].id == "PREPARE")
                 helper = ast.literal_eval(node.value)
-                self.assertEqual(helper["repo_id"], pin["repo_id"])
+                self.assertEqual(helper["repo_id"], "bqpro1/TheSystem")
                 self.assertEqual(helper["sha256"], hashlib.sha256((NOTEBOOKS / "prepare_runtime.py").read_bytes()).hexdigest())
                 if document(name)["metadata"]["thesystem"]["bootstrap_finalized"] or os.environ.get("THESYSTEM_REQUIRE_FINAL_PINS") == "1":
                     self.assertRegex(helper["revision"], r"^[0-9a-f]{40}$")
@@ -219,6 +220,7 @@ class NotebookTests(unittest.TestCase):
                 node = next(n for n in ast.parse(source(name, "prepare-runtime")).body
                             if isinstance(n, ast.Assign) and isinstance(n.targets[0], ast.Name) and n.targets[0].id == "PREPARE")
                 helper = ast.literal_eval(node.value)
+                self.assertEqual(helper["repo_id"], "bqpro1/TheSystem")
                 if document(name)["metadata"]["thesystem"]["bootstrap_finalized"] or os.environ.get("THESYSTEM_REQUIRE_FINAL_PINS") == "1":
                     self.assertRegex(helper["revision"], r"^[0-9a-f]{40}$")
                     self.assertEqual(helper["sha256"], hashlib.sha256((NOTEBOOKS / "prepare_evaluation.py").read_bytes()).hexdigest())
@@ -248,12 +250,15 @@ class NotebookTests(unittest.TestCase):
         pin = {"repo_id": "Lbuk/TheSystem-9B-Probe-256", "revision": "a" * 40,
                "filename": wheel.name, "sha256": pin_sha}
         with patch.dict(sys.modules, {"huggingface_hub": hub, "thesystem": SimpleNamespace()}), \
-                patch.dict(os.environ, {"HF_TOKEN": "test-only"}), \
+                patch.dict(os.environ, {}, clear=True), patch("getpass.getpass") as prompt, \
                 patch("importlib.metadata.distribution", return_value=previous), \
                 patch.object(eval_setup, "BOOTSTRAP", pin), \
                 patch.object(eval_setup.subprocess, "run", installer), \
                 redirect_stdout(io.StringIO()):
             eval_setup.download_wheel()
+        prompt.assert_not_called()
+        hub.hf_hub_download.assert_called_once_with(repo_id=pin["repo_id"], revision=pin["revision"],
+                                                    filename=pin["filename"], token=False)
         return installer
 
     def test_same_version_wheel_is_reinstalled(self):

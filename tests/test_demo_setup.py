@@ -36,29 +36,32 @@ class DemoSetupTests(unittest.TestCase):
             self.assertEqual([cell["id"] for cell in code], ["prepare-runtime"])
             self.assertIn("# @title Prepare runtime", code[0]["source"])
 
-    def test_notebook_replaces_stale_token_and_rejects_unverified_code(self):
+    def test_notebook_downloads_anonymously_and_rejects_unverified_code(self):
         for name in DEMOS:
             response = Mock()
             response.__enter__ = Mock(return_value=io.BytesIO(b"raise AssertionError('must not execute')"))
             response.__exit__ = Mock(return_value=False)
             output = io.StringIO()
-            with patch("sys.version_info", (3, 12)), patch("getpass.getpass", return_value="test-new-secret"), \
+            with patch("sys.version_info", (3, 12)), patch("getpass.getpass") as prompt, \
                     patch.dict(os.environ, {"HF_TOKEN": "test-old-secret"}), \
                     patch("urllib.request.urlopen", return_value=response) as download, redirect_stdout(output):
                 with self.assertRaisesRegex(RuntimeError, "helper checksum mismatch"):
                     exec(source(name), {})
-                self.assertEqual(os.environ["HF_TOKEN"], "test-new-secret")
-                self.assertEqual(download.call_args.args[0].get_header("Authorization"), "Bearer test-new-secret")
-            self.assertNotIn("test-new-secret", output.getvalue())
+                prompt.assert_not_called()
+                self.assertEqual(os.environ["HF_TOKEN"], "test-old-secret")
+                self.assertRegex(download.call_args.args[0],
+                                 r"^https://raw\.githubusercontent\.com/bqpro1/TheSystem/[0-9a-f]{40}/notebooks/prepare_runtime\.py$")
+            self.assertNotIn("test-old-secret", output.getvalue())
 
     def test_notebook_auth_error_is_actionable_and_does_not_execute_helper(self):
         for name in DEMOS:
             error = HTTPError("https://huggingface.co/test", 401, "Unauthorized", {}, None)
-            with patch("sys.version_info", (3, 13)), patch("getpass.getpass", return_value="test-token"), \
+            with patch("sys.version_info", (3, 13)), patch("getpass.getpass") as prompt, \
                     patch.dict(os.environ, {}, clear=True), \
                     patch("urllib.request.urlopen", side_effect=error), redirect_stdout(io.StringIO()):
-                with self.assertRaisesRegex(RuntimeError, "rerun this cell and paste a valid read token"):
+                with self.assertRaisesRegex(RuntimeError, r"public setup helper \(HTTP 401\)"):
                     exec(source(name), {})
+                prompt.assert_not_called()
 
     def test_notebook_rejects_wrong_python_before_token_or_network(self):
         with patch("sys.version_info", (3, 14)), patch("getpass.getpass") as prompt, \

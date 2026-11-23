@@ -6,7 +6,7 @@ AI from Poland <img src="docs/assets/poland-flag.svg" width="19" height="12" ali
 [![Open LoRA in Google Colab](https://img.shields.io/badge/Colab-LoRA-F9AB00?logo=googlecolab&logoColor=white)](https://colab.research.google.com/github/bqpro1/TheSystem/blob/main/notebooks/02-Try-LoRA.ipynb)
 [![Browse the Jupyter notebooks](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)](notebooks/)
 [![View the dataset on Hugging Face](https://img.shields.io/badge/Hugging%20Face-Dataset-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/Lbuk/TheSystem-Data)
-[![Python 3.12 or 3.13 setup](https://img.shields.io/badge/Python-3.12%20%7C%203.13-3776AB?logo=python&logoColor=white)](docs/REPRODUCIBILITY.md#setup-and-private-access)
+[![Python 3.12 or 3.13 setup](https://img.shields.io/badge/Python-3.12%20%7C%203.13-3776AB?logo=python&logoColor=white)](docs/REPRODUCIBILITY.md#setup-and-access)
 
 **Use one model to make decisions and generate text.**
 
@@ -31,8 +31,8 @@ Open either notebook in Colab and run the cells in order.
 
 > **Let the model choose the mode, or set it yourself.** Use `mode="auto"` for automatic routing. To run in **decision-only mode**, pass `mode="decision"` and the answer choices on every request. Use `mode="generation"` for writing.
 
-Requires an NVIDIA GPU with native BF16 support. Repositories are currently private;
-see [setup and private access](docs/REPRODUCIBILITY.md#setup-and-private-access).
+The notebooks download public release files automatically. Use an NVIDIA GPU with
+native BF16 support. See the [setup instructions](docs/REPRODUCIBILITY.md#setup-and-access).
 
 <table>
   <tr>
