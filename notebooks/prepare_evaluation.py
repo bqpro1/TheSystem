@@ -78,7 +78,6 @@ def check_preflight():
 
 
 def download_wheel():
-    import getpass
     import hashlib
     import re
     from huggingface_hub import hf_hub_download
@@ -88,15 +87,9 @@ def download_wheel():
     if not re.fullmatch(r"[0-9a-f]{64}", BOOTSTRAP["sha256"]):
         raise RuntimeError("This notebook's wheel checksum has not been finalized.")
 
-    # The token stays in this runtime's environment; it is not written to Git or printed.
-    if not os.environ.get("HF_TOKEN"):
-        token = getpass.getpass("Hugging Face read token (private release; Enter for public/cached access): ").strip()
-        if token:
-            os.environ["HF_TOKEN"] = token
-        del token
     wheel = Path(hf_hub_download(
         repo_id=BOOTSTRAP["repo_id"], revision=BOOTSTRAP["revision"],
-        filename=BOOTSTRAP["filename"], token=os.environ.get("HF_TOKEN") or False,
+        filename=BOOTSTRAP["filename"], token=False,
     ))
     actual = hashlib.sha256(wheel.read_bytes()).hexdigest()
     if actual != BOOTSTRAP["sha256"]:

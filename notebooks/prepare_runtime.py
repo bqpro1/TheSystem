@@ -198,13 +198,13 @@ def install_wheel(variant, log_path):
     from huggingface_hub.errors import HfHubHTTPError
     try:
         wheel = Path(hf_hub_download(
-            **WHEELS[variant], filename=WHEEL_NAME, token=os.environ.get("HF_TOKEN") or False,
+            **WHEELS[variant], filename=WHEEL_NAME, token=False,
         ))
     except HfHubHTTPError as error:
-        if error.response is not None and error.response.status_code in (401, 403):
+        if error.response is not None and error.response.status_code in (401, 403, 404):
             raise RuntimeError(
-                "Hugging Face denied access. Rerun Prepare runtime and enter a valid read token "
-                "for the private model repository. Browser login does not authenticate Colab."
+                f"Hugging Face could not serve the pinned public demo wheel (HTTP {error.response.status_code}). "
+                "Reopen the current notebook from GitHub and try again."
             ) from None
         raise
     if hashlib.sha256(wheel.read_bytes()).hexdigest() != WHEEL_SHA256:
@@ -270,7 +270,7 @@ def prepare_runtime(variant):
     except RestartRequired:
         message = (
             "RESTART REQUIRED: An imported library needs a fresh kernel. In Colab choose Runtime → Restart session; "
-            "in VS Code restart the kernel. Then rerun Prepare runtime and enter your read token again. "
+            "in VS Code restart the kernel. Then rerun Prepare runtime. "
             "Installed packages stay in place."
         )
         print(message, flush=True)
