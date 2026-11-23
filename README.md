@@ -14,7 +14,7 @@ Give TheSystem a set of options to choose from, or ask it to write a reply or ex
 TheSystem runs on Qwen3.5-9B and uses a learned **`<FAST>`** gate to choose between these two modes.
 I built two versions, **Probe-256** and **LoRA**, both with the original text-generation path.
 
-[Approach and technical details](https://github.com/bqpro1/TheSystem-Website) — the interactive architecture page and its local preview instructions.
+[Project website](https://bqpro1.github.io/TheSystem-Website/)
 
 For example: “Choose: Billing or Support” uses decision mode; “Write a reply” uses generation mode.
 
