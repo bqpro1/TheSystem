@@ -100,3 +100,7 @@ See [Licences and attribution](licenses/README.md) for third-party code, models 
 ## Cite this work
 
 Leszek Bukowski (2026). *TheSystem* (version 0.1.0rc4). [GitHub repository](https://github.com/bqpro1/TheSystem).
+
+### How I used coding agents
+
+I used Astra (GPT-6 and GPT-6.2), Sol (GPT-6.1 and GPT-6.2), and Terra (GPT-6.1) in Codex to help write the code and debug the notebooks. I especially valued having someone to bounce ideas off when deciding what to test next and thinking through what the results meant.
