@@ -90,6 +90,22 @@ enabled for text generation.
 
 [Open the validation notebook in Colab](https://colab.research.google.com/github/bqpro1/TheSystem/blob/main/notebooks/03-Reproduce-Evaluation.ipynb) to compare original Qwen, Probe-256 and LoRA on five benchmarks and check routing and writing preservation.
 
+### Evaluation
+
+I measured decision accuracy with automatic `<FAST>` routing and Qwen’s thinking mode off (`enable_thinking=False`).
+
+| Benchmark | `<FAST>` + LoRA | `<FAST>` + Probe-256 | [Bespoke-Nimble-9B](https://huggingface.co/bespokelabs/Bespoke-Nimble-9B) | [Jev 1.13.0](https://docs.typesafe.ai/models#current-models) |
+| --- | ---: | ---: | ---: | ---: |
+| VitaminC (599 examples) | 71.95% | 74.29% | [76.6%][benchmark-results] | [80.1%][benchmark-results] |
+| PAWS (250 examples) | 79.20% | 81.60% | [82.8%][benchmark-results] | [89.2%][benchmark-results] |
+| SQuAD2 answerability (299 examples) | 76.59% | 87.96% | [80.6%][benchmark-results] | [82.9%][benchmark-results] |
+| Aegis2 (250 examples) | 80.80% | 81.60% | [81.2%][benchmark-results] | [80.4%][benchmark-results] |
+| PubMedQA (250 examples) | 76.00% | 72.40% | [75.6%][benchmark-results] | [77.2%][benchmark-results] |
+
+All four models use the same 1,648 test examples. The Nimble and Jev scores are published reference results. Prompt formats differ by model.
+
+[benchmark-results]: https://github.com/bespokelabsai/nimble/blob/b30ec429fcd78c15fa12a5d3b68c5fbc3bf0430f/docs/PUBLIC_BENCHMARKS.md#results
+
 [Run the evaluation and read your results](docs/EVALUATION.md) · [Datasets](https://huggingface.co/datasets/Lbuk/TheSystem-Data) · [Licences](licenses/README.md)
 
 ## License
